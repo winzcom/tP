@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Welcome to Chef Like</h1>
+      <p class="lead">where we like our meals</p>
+      <hr class="my-4">
+      <p class="lead">
+        <a *ngIf="!isAuth" class="btn btn-outline-secondary btn-lg" [routerLink]="['/login']" role="button">Login</a>
+        <a class="btn btn-outline-warning" *ngIf="isAuth" (click)="logout()">Logout</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="http://4.bp.blogspot.com/-StMKpvba-rg/VQU28TE3bPI/AAAAAAAAAUA/Nbz2rsP-Rcw/s1600/TunerWap%2Btips%2Bpic.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="http://www.onceuponachef.com/images/2011/10/Thai-Chili-Glazed-Salmon-1-1024x699-1-450x300.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="https://www.nigerianbulletin.com/data/attachments/53/53430-ab01f053b8eb932a87f0b0f5f327258b.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
